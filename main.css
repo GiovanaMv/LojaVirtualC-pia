@@ -1,0 +1,96 @@
+* {box-sizing: border-box;margin: 0;padding: 0;font-family: Poppins, sans-serif;}
+body {background-color: rgb(110, 141, 197);}
+h1 {color:  rgb(176, 255, 176);;font-size: 1cm;text-shadow: -2px 2px 0 black;margin-left: 10%;}
+.conteiner {max-width: 100%;width: 100%;padding: 8px;}
+.conteiner-header {width: 100%;display: flex;justify-content: space-between;padding: 8px;background-size: cover;}
+header {padding: 16px 0 0;width: 100%; background-color: lightpink;}
+hr {border: 6px solid lightpink;border-top: 12px solid  rgb(176, 255, 176);; margin: 40px 0; }
+.botao-menu{background-color:lightsalmon;padding: 10px;border-radius: 20px;border-color: lightgoldenrodyellow;}
+.submenuUm a, .botao-menu{text-decoration: none;color: rgb(255, 255, 159);text-shadow: -2px 1px 0 rgb(43, 43, 43);font-size: large;font-weight: bold;}
+.submenuUm li {list-style: none;background-color: lightblue;border-radius: 20px;padding: 10px;}
+.menu {margin-left: 40%;list-style: none;position: absolute;background-color: lightsalmon;border-radius: 25px;color: white;text-shadow: 1px 1px 0 black;font-weight: bold;font-size: large;display: flex;padding: 0;}
+.menu > li {float: left;padding: 16px;position: relative;}
+.menu a {text-decoration: none;}
+.menu li:hover .submenu {display: block;background-color: rgb(176, 255, 176);;border-radius: 25px;margin-top: 5px;width: 130px;left: 0;}
+.submenu {display: none;list-style: none;position: absolute;left: 0;text-decoration: none;}
+.submenuUm li, .botao-menu {border: 2px solid rgb(233, 255, 198);}
+.submenu li {display: block;padding: 10px;}
+.submenu a {color: white;}
+.submenu li:hover a, .submenuUm li:hover a {color: rgb(128, 154, 240);}
+.clear {clear: both;}
+img {border-radius: 40px;}
+.conteiner-inicio img {width: 40%;border-radius: 10px;margin-right: 5%;}
+.conteiner-inicio {display: flex;justify-content: space-between;align-items: center;}
+.conteiner-inicio h2 {margin-bottom: auto;}
+.H1-text {display: block;margin: 50px;margin-bottom: 100px;padding: 50px;text-align: justify;color: rgb(247, 247, 125);}
+.H1-text h2 {padding: 30px;font-size: 2em;color: rgb(255, 255, 96);text-shadow: -2px 2px 0 black;}
+.conteiner-bolsas{display: flex;margin-top: -10px;}
+.conteiner-conteudo h2{color: lightsalmon;text-shadow: -2px 2px 0 black;}
+.conteiner-conteudo {margin-top: 20px;}
+.bolsas img{width: 90%;margin-left: 15px;}
+.bolsas p{color: rgb(253, 253, 186);text-align: center;}
+.bolsas h3{margin-left: 20%;color: rgb(255, 255, 96);text-shadow: 1px 1px 0 black;}
+.H2-bolsas{display: flex;justify-content: center;font-size: 2em;margin-bottom: 30px;}
+.bolsas button{padding: 14px;border-radius: 20px;margin-top: 10px;margin-left: 30px;background-color: lightsalmon;font-weight: bold;font-size: large;color:rgb(255, 255, 80);text-shadow: 1px 1px 0 black;}
+.bolsas button:hover{color: rgb(128, 154, 240);}
+.bolsas{margin: 20px;margin-left: 30px;}
+@media screen and (min-width: 1024px) {.botao-menu, .submenuUm{display: none;}}
+@media screen and (max-width:767px){
+    .conteiner-inicio, .conteiner-bolsas{display: flex;flex-wrap: wrap;flex-direction: column;}
+    .conteiner-inicio img {width: 90%;margin: 0;}
+    .H1-text{margin: 0;padding: 1px;}
+    .H1-text h2  {padding: 0;margin-left: 24%;margin-top: 10px;}
+    .H1-text p {text-align: justify;padding: 40px;}
+     hr {margin: 10px;}
+    .conteiner-header {width: 50%;display: block;justify-content: space-between;background-size: cover;}
+    .menu {display: none;}
+    .botao-menu {margin-left: 10%;}
+    .bolsas h3 {text-align: center;margin: 0;}
+    .bolsas p {text-align: center;}
+    .bolsas button {margin-left: 50px;}}
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .conteiner-header {
+            width: 50%;
+            display: block;
+            justify-content: space-between;
+            background-size: cover;
+        }
+        .botao-menu, .submenuUm {
+            display: none;
+        }
+        .menu {
+            margin-left: 60%;
+            margin-top: -60px;
+        }
+        .conteiner-inicio {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .conteiner-inicio img {
+            width: 90%;
+            margin: 0;
+        }
+        .H1-text {
+            margin: 0;
+        }
+        .H1-text h2 {
+            padding: 0;
+        }
+        .bolsas img {
+            margin: 0;
+            width: 300px;
+        }
+        .bolsas p {
+           text-align: justify;
+        }
+        /*ajuste layout*/
+        .conteiner-bolsas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+            gap: 20px; /* Espaçamento entre os produtos */
+        }
+    }
+    
+
+   

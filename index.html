@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanaColorata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+        <div class="conteiner-header">
+            <h1>Lana Colorata</h1>
+                <div >
+                    <button class="botao-menu" type="button">Menu</button>
+                </div>
+                    <ul class="submenuUm">
+                        <li>
+                            <a href="#Sobre">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="submenuUm">
+                        <li>
+                            <a href="#Novidades">Novidades</a>
+                        </li>
+                        <li>
+                            <a href="#Promoções">Promoções</a>
+                        </li>
+                    </ul>
+                <nav class="conteiner">
+                <ul class="menu">
+                    <li>
+                        Início 
+                        <ul class="submenu">
+                            <li>
+                                <a href="#Sobre">Sobre</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Produtos 
+                        <ul class="submenu">
+                            <li>
+                                <a href="#Novidades">Novidades</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="Sobre" class="conteiner-inicio">
+            <div class="H1-text">
+                <h2>Sobre a loja</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore explicabo debitis officia dolorum eligendi repellendus totam ipsam id aliquid obcaecati quo cum blanditiis, laudantium velit ipsa ullam quam vel recusandae.</p>  
+            </div>
+                <img src="./InicioLoja.jpg" alt="Bolsas Coloridas">
+        </section>
+        <hr>
+        <section  id="Novidades" class="conteiner-conteudo">
+            <h2 class="H2-bolsas">Novidades</h2>
+            <div class="conteiner-bolsas">
+            <article class="bolsas">
+                    <img src="./bolsa1.jpg" alt="Bolsa média marrom">
+                    <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <button type="button">Adicionar ao carrinho</button>
+            </article>
+            <article class="bolsas">
+                <img src="./bolsa2.jpg" alt="Bolsa colorida grande">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button type="button">Adicionar ao carrinho</button>
+        </article>
+        <article class="bolsas">
+            <img src="./bolsa3.jpg" alt="Bolsa colorida pequena">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <button type="button">Adicionar ao carrinho</button>
+    </article>
+    <article class="bolsas">
+        <img src="./chapeu2.jpg" alt="Bolsa colorida pequena">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <button type="button">Adicionar ao carrinho</button>
+</article>
+</div>
+</section>
+    </main>
+</div>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+        $('.botao-menu').click(function(){
+            $('.submenuUm').slideToggle();
+        });
+    });
+  </script>
+</body>
+</html>
